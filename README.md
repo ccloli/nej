@@ -1,5 +1,25 @@
 # NEJ - JavaScript Framework
 
+## What's this?
+
+This is a patch version of NEJ, it fixes some bugs when built with `nej-toolkit`.
+
+Here are the modified parts:
+
+1.  Move `src/util/gestrue` -> `src/util/gesture`  
+    `nej-toolkit` cannot find `src/util/gestrue`.
+
+2.  Replace class naming `_$$Gestrue` -> `_$$Gesture`  
+    Fix all typos that fixed in previous one.
+
+3.  Fix test cases for `src/ui/timepick`  
+    It's using `datepick` namespace, so `nej-toolkit` says it cannot find `./test/datepick.test.js`.
+
+4.  Remove demo folder `src/base/demo`  
+    Its relative path is messed up with `NEJ_DIR` option in `nej-toolkit`.
+
+If you need the demo folder back, please do `git revert acbe70d` (maybe, but if the commit hash changed, please try `git log --author=ccloli --grep="remove src/base/demo" --format=tformat:%H | xargs -I '{}' git revert {}`).
+
 ## 概述 
 
 跨平台WEB前端开发框架，主要提供Web端SDK用于开发Web应用，服务器端SDK用于整合解决方案的服务器端实现
