@@ -5,7 +5,7 @@
  * @author   genify(caijf@corp.netease.com)
  * ------------------------------------------
  */
-/** @module util/gestrue/gestrue */
+/** @module util/gesture/gesture */
 NEJ.define([
     'base/klass',
     'base/event',
@@ -15,20 +15,20 @@ NEJ.define([
      * 
      * 
      * 
-     * @class    module:util/gestrue/gestrue._$$Gestrue
+     * @class    module:util/gesture/gesture._$$Gesture
      * @extends  module:util/event._$$EventTarget
      * 
      * @param    {Object}      config  - 配置参数
      * 
      * 
      */
-    _p._$$Gestrue = _k._$klass();
-    _pro = _p._$$Gestrue._$extend(_t._$$EventTarget);
+    _p._$$Gesture = _k._$klass();
+    _pro = _p._$$Gesture._$extend(_t._$$EventTarget);
     /**
      * 控件初始化
      * 
      * @protected
-     * @method module:util/gestrue/gestrue._$$Gestrue#__reset
+     * @method module:util/gesture/gesture._$$Gesture#__reset
      * @param  {Object} arg0 - 配置参数
      * @return {Void}
      */
@@ -53,7 +53,7 @@ NEJ.define([
      * 开始触摸
      * 
      * @protected
-     * @method module:util/gestrue/gestrue._$$Gestrue#__onTouchStart
+     * @method module:util/gesture/gesture._$$Gesture#__onTouchStart
      * @param  {Object} arg0 - 事件对象
      * @return {Void}
      */
@@ -64,7 +64,7 @@ NEJ.define([
      * 触摸进行中
      * 
      * @protected
-     * @method module:util/gestrue/gestrue._$$Gestrue#__onTouchMove
+     * @method module:util/gesture/gesture._$$Gesture#__onTouchMove
      * @param  {Object} arg0 - 事件对象
      * @return {Void}
      */
@@ -75,7 +75,7 @@ NEJ.define([
      * 触摸结束
      * 
      * @protected
-     * @method module:util/gestrue/gestrue._$$Gestrue#__onTouchEnd
+     * @method module:util/gesture/gesture._$$Gesture#__onTouchEnd
      * @param  {Object} arg0 - 事件对象
      * @return {Void}
      */
@@ -85,7 +85,7 @@ NEJ.define([
     /**
      * 触发手势事件
      * 
-     * @method module:util/gestrue/gestrue._$$Gestrue#_$fire
+     * @method module:util/gesture/gesture._$$Gesture#_$fire
      * @param  {String}   arg0 - 事件类型
      * @param  {Variable} arg1 - 详细参数
      * @return {Void}
@@ -96,5 +96,5 @@ NEJ.define([
     
     
     
-    return _p._$$Gestrue._$allocate();
+    return _p._$$Gesture._$allocate();
 });

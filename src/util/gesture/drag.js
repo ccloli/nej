@@ -5,29 +5,29 @@
  * @author   genify(caijf@corp.netease.com)
  * ------------------------------------------
  */
-/** @module util/gestrue/drag */
+/** @module util/gesture/drag */
 NEJ.define([
     'base/klass',
-    './gestrue.js'
+    './gesture.js'
 ],function(_k,_t,_p,_o,_f,_r,_pro){
     /**
      * 
      * tap taphold dbltap
      * 
-     * @class    module:util/gestrue/drag._$$GestrueDrag
+     * @class    module:util/gesture/drag._$$GestureDrag
      * @extends  module:util/event._$$EventTarget
      * 
      * @param    {Object}      config  - 配置参数
      * 
      * 
      */
-    _p._$$GestrueDrag = _k._$klass();
-    _pro = _p._$$GestrueDrag._$extend(_t._$$Gestrue);
+    _p._$$GestureDrag = _k._$klass();
+    _pro = _p._$$GestureDrag._$extend(_t._$$Gesture);
     /**
      * 控件初始化
      * 
      * @protected
-     * @method module:util/gestrue/drag._$$GestrueDrag#__reset
+     * @method module:util/gesture/drag._$$GestureDrag#__reset
      * @param  {Object} arg0 - 配置参数
      * @return {Void}
      */
@@ -39,7 +39,7 @@ NEJ.define([
      * 开始触摸
      * 
      * @protected
-     * @method module:util/gestrue/drag._$$GestrueDrag#__onTouchStart
+     * @method module:util/gesture/drag._$$GestureDrag#__onTouchStart
      * @param  {Object} arg0 - 事件对象
      * @return {Void}
      */
@@ -50,7 +50,7 @@ NEJ.define([
      * 触摸进行中
      * 
      * @protected
-     * @method module:util/gestrue/drag._$$GestrueDrag#__onTouchMove
+     * @method module:util/gesture/drag._$$GestureDrag#__onTouchMove
      * @param  {Object} arg0 - 事件对象
      * @return {Void}
      */
@@ -61,7 +61,7 @@ NEJ.define([
      * 触摸结束
      * 
      * @protected
-     * @method module:util/gestrue/drag._$$GestrueDrag#__onTouchEnd
+     * @method module:util/gesture/drag._$$GestureDrag#__onTouchEnd
      * @param  {Object} arg0 - 事件对象
      * @return {Void}
      */

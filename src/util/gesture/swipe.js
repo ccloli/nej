@@ -5,29 +5,29 @@
  * @author   genify(caijf@corp.netease.com)
  * ------------------------------------------
  */
-/** @module util/gestrue/swipe */
+/** @module util/gesture/swipe */
 NEJ.define([
     'base/klass',
-    './gestrue.js'
+    './gesture.js'
 ],function(_k,_t,_p,_o,_f,_r,_pro){
     /**
      * 
      * 
      * 
-     * @class    module:util/gestrue/swipe._$$GestrueSwipe
+     * @class    module:util/gesture/swipe._$$GestureSwipe
      * @extends  module:util/event._$$EventTarget
      * 
      * @param    {Object}      config  - 配置参数
      * 
      * 
      */
-    _p._$$GestrueSwipe = _k._$klass();
-    _pro = _p._$$GestrueSwipe._$extend(_t._$$Gestrue);
+    _p._$$GestureSwipe = _k._$klass();
+    _pro = _p._$$GestureSwipe._$extend(_t._$$Gesture);
     /**
      * 控件初始化
      * 
      * @protected
-     * @method module:util/gestrue/swipe._$$GestrueSwipe#__reset
+     * @method module:util/gesture/swipe._$$GestureSwipe#__reset
      * @param  {Object} arg0 - 配置参数
      * @return {Void}
      */
@@ -39,7 +39,7 @@ NEJ.define([
      * 开始触摸
      * 
      * @protected
-     * @method module:util/gestrue/swipe._$$GestrueSwipe#__onTouchStart
+     * @method module:util/gesture/swipe._$$GestureSwipe#__onTouchStart
      * @param  {Object} arg0 - 事件对象
      * @return {Void}
      */
@@ -50,7 +50,7 @@ NEJ.define([
      * 触摸进行中
      * 
      * @protected
-     * @method module:util/gestrue/swipe._$$GestrueSwipe#__onTouchMove
+     * @method module:util/gesture/swipe._$$GestureSwipe#__onTouchMove
      * @param  {Object} arg0 - 事件对象
      * @return {Void}
      */
@@ -61,7 +61,7 @@ NEJ.define([
      * 触摸结束
      * 
      * @protected
-     * @method module:util/gestrue/swipe._$$GestrueSwipe#__onTouchEnd
+     * @method module:util/gesture/swipe._$$GestureSwipe#__onTouchEnd
      * @param  {Object} arg0 - 事件对象
      * @return {Void}
      */
