@@ -15,10 +15,10 @@ Here are the modified parts:
 3.  Fix test cases for `src/ui/timepick`  
     It's using `datepick` namespace, so `nej-toolkit` says it cannot find `./test/datepick.test.js`.
 
-4.  Remove demo folder `src/base/demo`  
-    Its relative path is messed up with `NEJ_DIR` option in `nej-toolkit`.
+4.  ~Remove demo folder `src/base/demo`~  
+    ~Its relative path is messed up with `NEJ_DIR` option in `nej-toolkit`.~  
+    Reverted, as you should ignore them manually by setting `FILE_EXCLUDE` to `(test|demo)\.(js|mcss|css|html)|\/(test|demo)\/`.
 
-If you need the demo folder back, please do `git revert acbe70d` (maybe, but if the commit hash changed, please try `git log --author=ccloli --grep="remove src/base/demo" --format=tformat:%H | xargs -I '{}' git revert {}`).
 
 ## 概述 
 
